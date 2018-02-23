@@ -1,0 +1,21 @@
+{% extends 'pet/base2.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+	{% for petmania in petmanias %}
+            <div class= 'ini'>
+                <center><h3><p>Publicado em:{{ petmania.datapublicacao }}</p></h3><center>
+                <center><h1><bold><a href="{{ petmania.get_absolute_url }}">{{ petmania.titulo }}</a></bold></h1></center>
+                <center><img>{% cloudinary petmania.imagem %}</center>
+                <center><p><h2>{{ petmania.apresentacao }}</h2></p></center>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        {% endfor %}
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

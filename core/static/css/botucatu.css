@@ -1,0 +1,332 @@
+* {margin:0;padding:0;}
+body{
+	background: #E9E1C9;  
+	/*background-color: #000; */
+	background-attachment: fixed;
+	min-height: 100%;
+  	height: auto;
+  	position: relative;
+  	margin: 0;
+  	top: 0;
+  	left: 0;
+}
+.logo img{
+	display: hidden;
+	margin: 0 0;   
+  	/*padding-left: 80px; */ 
+  	width: 15%;   
+  	height: 1%; 
+  	margin: 0;
+  	float: left;
+}
+.logo4 img{
+	display: hidden;
+	margin: 0 0;   
+  	/*padding-left: 80px; */ 
+  	width: 20%;   
+  	height: 2%; 
+  	margin: 0;
+  	float: left;
+}
+
+.texto{
+	margin: 0 0;
+}
+
+header {
+  background-color: solid transparent;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+
+div.body-content{
+  /** Essa margem vai evitar que o conteudo fique por baixo do rodapé **/
+  margin-bottom: 40px;
+}
+
+table{
+	position: relative;
+    margin: 10px auto;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+h1, h2{
+	font-family: 'Luckiest Guy';
+	margin: 0 auto;
+	text-decoration:none;  
+	color: black;
+}
+.ini h2{
+	color: black;
+}
+
+.ini h1{
+	color: blue;
+}
+
+.ini a{
+	color: black;
+	margin: 0 auto;
+	padding-right: 40px; 
+}
+
+.ini a:hover{
+	color: darkblue;
+}
+
+.btns{
+	float: center;
+}
+
+.btn1{
+	background: linear-gradient(SandyBrown, red);
+	border-radius: 40%;
+	border-color: black;
+	color: white;
+	width: 100%;
+	height: 70px;
+}
+.btn1:hover {
+	background: linear-gradient(red, SandyBrown);
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	height: 70px;
+}
+
+.btn2{
+	background: linear-gradient(SandyBrown, red);
+	border-radius: 40%;
+	border-color: black;
+	color: white;
+	width: 100%;
+	height: 70px;
+}
+.btn2:hover {
+	background: linear-gradient(red, SandyBrown);
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	height: 70px;
+}
+
+.btn3{
+	background: linear-gradient(SandyBrown, red);
+	border-radius: 40%;
+	border-color: black;
+	color: white;
+	width: 100%;
+	height: 70px;
+}
+.btn3:hover {
+	background: linear-gradient(red, SandyBrown);
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	height: 70px;
+}
+
+.btn4{
+	background: linear-gradient(SandyBrown, red);
+	border-radius: 40%;
+	border-color: black;
+	color: white;
+	width: 100%;
+	height: 70px;
+}
+.btn4:hover {
+	background: linear-gradient(red, SandyBrown);
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	height: 70px;
+}
+
+.vcaqui{
+ 	background: linear-gradient(SandyBrown, red);
+	border-radius: 60%;
+	border-color: black;
+	color: white;
+	width: 25%;
+	height: 100px;
+ }
+.imagem img{
+	border-radius: 30%;
+}
+
+.ini img{
+	max-width: 50%;
+	max-height: 50%;
+	border-radius: 100%;
+	margin:0 auto;	
+	border-style: dotted;
+	border-width: 5px;
+	float: top;
+	overflow: auto;
+}
+
+.post img{
+	border-radius: 30%;
+	display: block;
+	max-width: 80%;
+	height: auto;
+}
+
+.btns h1{
+	padding-left: 8%;
+}
+
+div.rodape{
+	/*
+	border-top: 20px solid transparent;
+	border-right: 20px solid red;
+	border-bottom: 40px solid transparent;
+    border-left: 20px solid red; 
+  	bottom: 0;
+  	left: 0;
+  	*/
+  	margin:0 auto;
+  	height: 15%;
+  	position: fixed;
+  	width: 100%;
+  	
+
+ }
+
+ .rodape button{
+ 	position: fixed;
+ 	bottom: 0;
+ }
+ /*
+ .btns p{
+ 	padding-right: 30px;
+ }
+ Não deu certo, minha tentativa de centralizar o texto da página inicial
+ */
+/*
+ footer{
+ 	width: 1%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+ }
+ */
+ 
+.valores h3{
+	border: 2px solid;
+	color: black;
+	margin: 0 auto;
+	border-color: black red black red;
+
+}
+.rodape2 img{
+	margin: auto;
+	width: 10%;
+	bottom: 0px;
+	left: 50px;
+	position: fixed;
+}
+
+.ini2 h2, h3{
+	color: black;
+}
+
+.ini2 h1{
+	color: blue;
+}
+
+.ini2 img{
+	max-width: 50%;
+	max-height: 50%;
+	border-radius: 100%;
+	margin:0 auto;	
+	border-style: dotted;
+	border-width: 5px;
+	float: top;
+	overflow: auto;
+}
+
+.ini{
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px; 
+	background: white;
+	border: 5px solid;
+	border-color: black;
+}
+
+.ini2{
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px; 
+	background: white;
+	border: 5px solid;
+	border-color: black;
+
+}
+
+.ini h1{
+	background: linear-gradient(yellow, red);
+}
+
+.ini2 h1{
+	background: linear-gradient(red, yellow);
+}
+
+.tabela table{
+	width: 90%;
+/*	border: 5px; */
+	border-color: solid black;
+}
+.tabela tr{
+	width: 30%;
+/*	border: 5px; */
+	background: linear-gradient(#F2F2F2,  #E6E6E6);
+	border-color: solid black;
+}
+.tabela{
+	padding-right: 5px;
+	padding-left: 5px;
+/*	border: 5px; */
+	border-collapse: collapse;
+	border-color: solid black;
+}
+
+.tabela img{
+	max-width: 80%;
+	max-height: 80%;
+	border-radius: 100%;
+	margin:0 auto;	
+	border-style: dotted double;
+	border-width: 5px;
+	border-color: blue;
+	float: top;
+	overflow: auto;
+	background: linear-gradient(#F4FA58, #FE642E);
+}
+
+.tabela img:hover{
+	max-width: 100%;
+	max-height: 100%;
+	border-color: black;
+}
+
+tr, td{
+	border-width: 5px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+	text-decoration:none;  
+	color: black;
+}
+
+td:hover{
+	font-size: 120%;
+}

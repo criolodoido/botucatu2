@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+	<div class='imagem'>
+		<center><img src="{% static 'images/ferroviaria.jpg' %}" alt="Ferroviaria!"></center>
+	</div>
+	<center><p><h1>Lojas disponíveis:<br>Vital Brasil</h1></p></center>
+	<div class='tabela'>
+		<table border="5">
+			<center>
+				<tr>
+					<td><b><h1>Nome da empresa</h1></b></td>
+					<td><b><h1>Um pouco sobre</h1></b></td>
+					<td><b><h1>Link</h1></b></td> 
+				</tr>
+			
+				<tr>
+					<td><h2>Petmania</td>
+					<td><h2>Um lugar onde o seu cão entra como ele é, mesmo que seja medroso, gordo, preguiçoso, gay, sairá uma verdadeira máquina mortifera, fazedor de barulho. Somente um aviso: ele matará todo mundo que tentar pular seu portão, sem um pingo de compaixão ou misericórdia.</td>
+					<td><a href="{% url 'petmania:petmania' %}"><img src="{% static 'images/petmania.ico' %}" alt="Cachorro loko!"></td>
+				</tr>
+
+				<tr>
+					<td><h2>Mozix & Comix</h2></td>
+					<td><h2>Um lugar onde a comilança não tem limites. Aqui é comer ou ser comido, onde ninguém sente remorso em ver os botões da calça estourando após a quinta repetição. Se comer é sua paixão, você está no lugar certo.</h2></td>
+					<td><a href="{% url 'mozix:mozix' %}"><img src="{% static 'images/mozix.ico' %}" alt="comida!"></td>
+				</tr>
+
+				<tr>
+					<td><h2>Mac Donalds</h2></td>
+					<td><h2>Um lugar onde a comilança não tem limites. Aqui é comer ou ser comido, onde ninguém sente remorso em ver os botões da calça estourando após a quinta repetição. Se comer é sua paixão, você está no lugar certo.</h2></td>
+					<td><a href="{% url 'mc:mcdonalds' %}"><img src="{% static 'images/mcdonalds.ico' %}" alt="mcdonalds!"></td>
+				</tr> 
+			</center>
+		</table>
+	</div>
+<!--Fazer uma tabela pra colocar as lojas aqui dentro, seguindo meu esboço -->
+{% endblock %}
+
+<!-- <center><p><h2>Petmania</p><a href="{% url 'petmania:petmania' %}"><button>Entrar</button></h2></center> -->

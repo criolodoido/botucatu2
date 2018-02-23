@@ -1,0 +1,21 @@
+{% extends 'acai/base2.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+	{% for acai in acais %}
+	            <div class= 'ini'>	            	
+	                <center><h3><p>Publicado em:{{ acai.datapublicacao }}</p></h3><center>
+	                <center><h1><bold><a href="{{ acai.get_absolute_url }}">{{ acai.titulo }}</a></bold></h1></center>
+	                <center><img>{% cloudinary acai.imagem %}</center>
+	                <center><p><h2>{{ acai.apresentacao }}</h2></p></center>
+	                <br>
+	                <br>
+	            </div>
+	{% endfor %}
+	<br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+
+

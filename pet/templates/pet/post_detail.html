@@ -1,0 +1,14 @@
+{% extends 'pet/base2.html' %}
+{% load cloudinary %}
+{% block content %}
+    <div class="post">
+        {% if post.datapublicacao %}
+            <div class="date">
+                <h3><b>{{ post.datapublicacao }}{{ post.timestamp }}</b></h3>
+            </div>
+        {% endif %}
+        <center><p><h1>{{ post.titulo }}</h1></p></center>
+        <center><img>{% cloudinary post.imagem %}</img></center>
+        <center><p><h2>{{ post.apresentacao|linebreaksbr }}</h2></p></center>
+    </div>
+{% endblock %}

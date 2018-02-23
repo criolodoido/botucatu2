@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+	<div class="imagem">
+		<center><img src="{% static 'images/lui.jpg' %}" alt="Lui, cabra bom!"></center>
+	</div>
+	<center><p><h1>Lojas disponíveis:<br>Centro</h1></p></center>
+	<div class='tabela'>
+		<table border="5">
+			<center>
+				<tr>
+					<td><b><h1>Nome da empresa</h1></b></td>
+					<td><b><h1>Um pouco sobre</h1></b></td>
+					<td><b><h1>Link</h1></b></td> 
+				</tr>
+				<tr>
+					<td><h2>Petmania</td>
+					<td><h2>O melhor do Açaí, do sorvete, das bebidas em um lugar só: no centro de Botucatu. O melhor lugar para se refrescar, tomando um delicioso açaí, sorvete ou algum shake, no centro de Botucatu.</td>
+					<td><a href="{% url 'acai:acai' %}"><img src="{% static 'images/acai.ico' %}" alt="Açaí do Centro"></td>
+				</tr>
+			</center>
+		</table>
+	</div>	
+{% endblock %}
+	

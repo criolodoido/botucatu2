@@ -1,0 +1,21 @@
+{% extends 'mcdonalds/base2.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+	{% for mc in mcs %}
+	            <div class= 'ini'>	            	
+	                <center><h3><p>Publicado em:{{ mc.datapublicacao }}</p></h3><center>
+	                <center><h1><bold><a href="{{ mc.get_absolute_url }}">{{ mc.titulo }}</a></bold></h1></center>
+	                <center><img>{% cloudinary mc.imagem %}</center>
+	                <center><p><h2>{{ mc.apresentacao }}</h2></p></center>
+	                <br>
+	                <br>
+	            </div>
+	{% endfor %}
+	<br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+
+

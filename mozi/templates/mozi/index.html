@@ -1,0 +1,22 @@
+{% extends 'mozi/base2.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+
+	{% for mozi in mozis %}
+	            <div class= 'ini'>	            	
+	                <center><h3><p>Publicado em:{{ mozi.datapublicacao }}</p></h3><center>
+	                <center><h1><bold><a href="{{ mozi.get_absolute_url }}">{{ mozi.titulo }}</a></bold></h1></center>
+	                <center><img>{% cloudinary mozi.imagem %}</center>
+	                <center><p><h2>{{ mozi.apresentacao }}</h2></p></center>
+	                <br>
+	                <br>
+	            </div>
+	{% endfor %}
+	<br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+
+

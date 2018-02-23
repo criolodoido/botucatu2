@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+		$(function () {
+    		var parent = $("#shuffle");
+    		var divs = parent.children();
+    		while (divs.length) {
+        		parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    		}
+		});
+		</script>
+
+<!-- Toda nova empresa deve ser jogada aqui, dentro de shuffle, para poder ser exibida na tela inicial -->
+	<div id="shuffle">
+		<div class='ini'>
+		<center><h1><i><br>Petmania - Vital Brasil<br></i></h1></center>
+			{% for petmania in petmanias %}
+	                
+	                <br>
+	                <center><h2><p>Publicado em:{{ petmania.datapublicacao }}</p></h2><center>
+	                <center><h2>{{ petmania.titulo }}</h2></center>
+	                <center><img>{% cloudinary petmania.imagem %}</center>
+	                <center><p><h2>{{ petmania.apresentacao }}</h2></p></center>
+	                <br>
+	                
+	        {% endfor %}
+	        <br>
+	        <br>
+	    </div>
+
+
+
+		
+		<div class='ini2'>
+		<center><h1><i><br>Mozix & Comix - Av. Dom Lucio<br></i></h1></center>
+			{% for mozi in mozis %}
+			    
+			        <br>
+			        <center><h2><p>Publicado em:{{ mozi.datapublicacao }}</p></h2><center>
+			        <center><h2>{{ mozi.titulo }}</h2></center>
+			        <center><img>{% cloudinary mozi.imagem %}</center>
+			        <center><p><h2>{{ mozi.apresentacao }}</h2></p></center>
+			        <br>
+			            
+			{% endfor %}
+			<br>
+			<br>
+		</div>
+	</div>
+{% endblock %}
