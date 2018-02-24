@@ -3,11 +3,19 @@
 {% load staticfiles %}
 {% block content %}
 	<div class='imagem'>
-		<center><img src="{% static 'images/catedral.jpg' %}" alt="A catedral da cidade!"></center>
+		<center><img src="{% static 'images/domlucio.png' %}" alt="Av. DomLucio!"></center>
 	</div>
-	<center><p><h1>Lojas disponíveis:</h1></p></center>
-	<div class='lojas'>
-		<center><p><h2>Mozix & Comix</p><a href="{% url 'mozix:mozix' %}"><button>Entrar</button></h2></center>
+	<center><p><h1>Lojas disponíveis:<br>Av. Dom Lucio</h1></p></center>
+	<div class='tabela'>
+		<table border="5">
+			<center>
+				<tr>
+					<td><b><h1>Nome da empresa</h1></b></td>
+					<td><b><h1>Um pouco sobre</h1></b></td>
+					<td><b><h1>Link</h1></b></td> 
+				</tr>
+		
 
-		<!-- Fazer aqui um layout pra exibir a loja petmania, do Tonhão, assim como depois em outra página a loja do Mozi -->
+
+
 {% endblock %}

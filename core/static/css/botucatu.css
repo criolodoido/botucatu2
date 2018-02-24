@@ -158,6 +158,8 @@ h1, h2{
  }
 .imagem img{
 	border-radius: 30%;
+	max-width: 30%;
+	max-height: 30%;
 }
 
 .ini img{

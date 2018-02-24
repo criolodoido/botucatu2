@@ -3,6 +3,18 @@
 {% load staticfiles %}
 {% block content %}
 	<div class="imagem">
-		<center><img src="{% static 'images/rotatoria.jpg' %}" alt="Girando girando!"></center>
+		<center><img src="{% static 'images/bairro.png' %}" alt="Bairro Nova Botucatu!"></center>
+	</div>
+	<center><p><h1>Lojas disponíveis:<br>Bairro</h1></p></center>
+	<div class='tabela'>
+		<table border="5">
+			<center>
+				<tr>
+					<td><b><h1>Nome da empresa</h1></b></td>
+					<td><b><h1>Um pouco sobre</h1></b></td>
+					<td><b><h1>Link</h1></b></td> 
+				</tr>
+			</center>
+		</table>
 	</div>
 {% endblock %}
