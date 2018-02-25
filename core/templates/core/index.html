@@ -76,22 +76,22 @@
 			<br>
 			<br>
 		</div>
-	</div>
-
-	<div class='ini2'>
-		<center><h1><i><br><a href="{% url 'acai:acai' %}">Açaí do Centro - Centro</a><br></i></h1></center>
-			{% for acai in acais %}
-			    
-			        <br>
-			        <center><h3><p>Publicado em:{{ acai.datapublicacao }}</p></h3><center>
-			        <center><h2>{{ acai.titulo }}</h2></center>
-			        <center><img>{% cloudinary acai.imagem %}</center>
-			        <center><p><h2>{{ acai.apresentacao }}</h2></p></center>
-			        <br>
-			            
-			{% endfor %}
-			<br>
-			<br>
+		
+		<div class='ini2'>
+			<center><h1><i><br><a href="{% url 'acai:acai' %}">Açaí do Centro - Centro</a><br></i></h1></center>
+				{% for acai in acais %}
+				    
+				        <br>
+				        <center><h3><p>Publicado em:{{ acai.datapublicacao }}</p></h3><center>
+				        <center><h2>{{ acai.titulo }}</h2></center>
+				        <center><img>{% cloudinary acai.imagem %}</center>
+				        <center><p><h2>{{ acai.apresentacao }}</h2></p></center>
+				        <br>
+				            
+				{% endfor %}
+				<br>
+				<br>
+			</div>
 		</div>
 	</div>
 
