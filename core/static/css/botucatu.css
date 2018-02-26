@@ -332,3 +332,7 @@ tr, td{
 td:hover{
 	font-size: 120%;
 }
+
+.fb-comments{
+	max-width: 70%;
+}
