@@ -10,7 +10,7 @@ from acai.models import Acai
 
 def index(request):
 	#no posts, posso fazer no models um campo para data limite de exibicao, desta forma crio aqui no views a condicao para a exibicao do mesmo.
-	posts = Promocao.objects.filter(encerramento__lte=timezone.now()).order_by('-encerramento')
+	posts = Promocao.objects.filter(encerramento__gte=timezone.now()).order_by('-encerramento')
 	mozis = Mozix.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=7))[0:3]#usar o filtro manipulando o timezone é uma boa, exibir valores postados na ultima semana
 	petmanias = Petmania.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=7))[0:3]
 	mcs = Mcdonalds.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=7))[0:3]

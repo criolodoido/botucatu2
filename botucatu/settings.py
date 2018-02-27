@@ -66,12 +66,12 @@ TEMPLATES = [
 WSGI_APPLICATION = 'botucatu.wsgi.application'
 
 
-DATABASES = {'default': dj_database_url.config(default='postgres://visus:sentinela@localhost/banco3')}
+DATABASES = {'default': dj_database_url.config(default='postgres://visus:sentinela@localhost/banco')}
 
 CLOUDINARY = {
-    'cloud_name' : 'criolo',
-    'api_key' : '283784727558917',
-    'api_secret': 'Fra_3V9xljonsxvlSY-gP-xOSjs'
+    'cloud_name' : 'www-cadeosaci-com-br',
+    'api_key' : '877969967653177',
+    'api_secret': 'e3Cyb0o17Y2TwBngergJY-kzLLk'
 }
 
 

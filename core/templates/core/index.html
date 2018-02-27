@@ -18,11 +18,12 @@
 		{% for post in posts %}
 			<br>
 	        <center><h3><p>Publicado em:{{ post.postado }}</p></h3><center>
-	        <center><h2>{{ post.titulo }}</h2></center>
+	        <center><h2>{{ post.nome }}</h2></center>
 	        <center><img>{% cloudinary post.foto %}</center>
 	        <center><p><h2>{{ post.apresentacao }}</h2></p></center>
 	        <br>
-	    {% endfor %}	
+	    {% endfor %}
+	</div>	
 
 <!-- Toda nova empresa deve ser jogada aqui, dentro de shuffle, para poder ser exibida na tela inicial -->
 	<div id="shuffle">
