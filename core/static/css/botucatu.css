@@ -86,6 +86,7 @@ h1, h2{
 
 .btn1{
 	background: linear-gradient(SandyBrown, red);
+	transition: transform .2s;
 	border-radius: 40%;
 	border-color: black;
 	color: white;
@@ -93,6 +94,7 @@ h1, h2{
 	height: 70px;
 }
 .btn1:hover {
+	transform: scale(1.5);
 	background: linear-gradient(red, SandyBrown);
 	text-decoration: none;
 	color: white;
@@ -102,6 +104,7 @@ h1, h2{
 
 .btn2{
 	background: linear-gradient(SandyBrown, red);
+	transition: transform .2s;
 	border-radius: 40%;
 	border-color: black;
 	color: white;
@@ -109,6 +112,7 @@ h1, h2{
 	height: 70px;
 }
 .btn2:hover {
+	transform: scale(1.5);
 	background: linear-gradient(red, SandyBrown);
 	text-decoration: none;
 	color: white;
@@ -118,6 +122,7 @@ h1, h2{
 
 .btn3{
 	background: linear-gradient(SandyBrown, red);
+	transition: transform .2s;
 	border-radius: 40%;
 	border-color: black;
 	color: white;
@@ -125,6 +130,7 @@ h1, h2{
 	height: 70px;
 }
 .btn3:hover {
+	transform: scale(1.5);
 	background: linear-gradient(red, SandyBrown);
 	text-decoration: none;
 	color: white;
@@ -134,6 +140,7 @@ h1, h2{
 
 .btn4{
 	background: linear-gradient(SandyBrown, red);
+	transition: transform .2s;
 	border-radius: 40%;
 	border-color: black;
 	color: white;
@@ -141,6 +148,7 @@ h1, h2{
 	height: 70px;
 }
 .btn4:hover {
+	transform: scale(1.5);
 	background: linear-gradient(red, SandyBrown);
 	text-decoration: none;
 	color: white;
@@ -332,3 +340,4 @@ tr, td{
 td:hover{
 	font-size: 120%;
 }
+
