@@ -242,6 +242,11 @@ div.rodape{
 	bottom: 0px;
 	left: 50px;
 	position: fixed;
+	transition: transform .2s;
+}
+
+.rodape2 img:hover{
+	transform: scale(1.5);
 }
 
 .ini2 h2, h3{
@@ -344,3 +349,6 @@ tr, td{
 	font-family: 'Indie Flower', cursive;
 }
 */
+.mapa{
+	float: center;
+}
