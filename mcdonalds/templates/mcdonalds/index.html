@@ -12,6 +12,18 @@
 	                <br>
 	            </div>
 	{% endfor %}
+	{% for ticket in tickets %}
+		<center><div class= 'ticket'>
+					<br>
+					<br>
+					<p><h2>{{ ticket.apresentacao }}</h2></p>
+	                <center><img>{% cloudinary ticket.imagem %}</center>
+	                <center><h1><bold><a href="{{ ticket.get_absolute_url }}">{{ ticket.titulo }}</a></bold></h1></center>
+	                <img src="{% static 'images/logo3.png' %}" alt="logo3"/>
+	                <br>
+	                <br>
+	   </center></div>
+	{% endfor %}
 	<br>
     <br>
     <br>

@@ -19,8 +19,8 @@ def oferta(request):
 	return render(request, 'mcdonalds/index.html', {'mcs': mcs})
 
 def cupons(request):
-	mcs = Mcdonalds.objects.filter(tipos='CUPOM', validade__gte=timezone.now()).order_by('-datapublicacao')
-	return render(request, 'mcdonalds/index.html', {'mcs': mcs})
+	tickets = Mcdonalds.objects.filter(tipos='CUPOM', validade__gte=timezone.now()).order_by('-datapublicacao')
+	return render(request, 'mcdonalds/index.html', {'tickets': tickets})
 	
 def combos(request):
 	mcs = Mcdonalds.objects.filter(tipos='COMBO')

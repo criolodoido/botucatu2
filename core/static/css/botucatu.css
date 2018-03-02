@@ -247,6 +247,7 @@ div.rodape{
 
 .rodape2 img:hover{
 	transform: scale(1.5);
+	padding-bottom: 20px;
 }
 
 .ini2 h2, h3{
@@ -351,4 +352,35 @@ tr, td{
 */
 .mapa{
 	float: center;
+}
+/* ticket */
+.ticket{
+	width: 50%;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px; 
+	/*background: #ff944d;*/
+	background: linear-gradient(#ff944d, #e65c00);
+	border: 5px solid;
+	border-color: black;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 30%;
+}
+
+.ticket h2{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	float: top;
+	width: 35%;
+	border: 5px solid;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.ticket img{
+	background-color: white;
+	border: 3px solid;
+	border-color: black;
+	border-radius: 50%;
 }
