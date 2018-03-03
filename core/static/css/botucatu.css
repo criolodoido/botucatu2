@@ -380,8 +380,12 @@ tr, td{
 }
 
 .ticket img{
+	max-width: 50%;
+	max-height: 50%;
+	margin: 0 auto;
 	background-color: white;
 	border: 3px solid;
 	border-color: black;
 	border-radius: 50%;
+	overflow: auto;
 }
