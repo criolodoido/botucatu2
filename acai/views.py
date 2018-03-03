@@ -14,22 +14,11 @@ def post_detail(request, pk):
     Acai.objects.get(pk=pk)
     return render(request, 'acai/post_detail.html', {'post': post})
 
-def oferta(request):
-	acais = Acai.objects.filter(tipos='OFERT')
+def cardapio(request):
+	acais = Acai.objects.filter(tipos='CARD')
 	return render(request, 'acai/index.html', {'acais': acais})
 
 def cupons(request):
 	acais = Acai.objects.filter(tipos='CUPOM', validade__gte=timezone.now()).order_by('-datapublicacao')
 	return render(request, 'acai/index.html', {'acais': acais})
 	
-def comboa(request):
-	acais = Acai.objects.filter(tipos='COMBOA')
-	return render(request, 'acai/index.html', {'acais': acais})
-
-def combob(request):
-	acais = Acai.objects.filter(tipos='COMBOB')
-	return render(request, 'acai/index.html', {'acais': acais})
-
-def bebidas(request):
-	acais = Acai.objects.filter(tipos='BEBIDA')
-	return render(request, 'acai/index.html', {'acais': acais})

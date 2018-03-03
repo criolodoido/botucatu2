@@ -30,8 +30,8 @@ INSTALLED_APPS = [
     'core',
     'pet',
     'mozi',
-    'mcdonalds',
     'acai',
+    'pastel',
 
 ]
 

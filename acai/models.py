@@ -5,20 +5,17 @@ from cloudinary.models import CloudinaryField
 
 class Acai(models.Model):
 	TIPOS = (
-		('OFERT', 'Ofertas do dia'),
 		('CUPOM', 'Cupons'),
-		('COMBOA', 'Combos Açaí'),#opcoes para entrega a partir daqui
-		('COMBOB', 'Combos Sorvete'),
-		('BEBIDA', 'Bebidas'),
-		('INI', 'Inicial')
+		('CARD', 'Cardápio'),
+		('INI', 'Início')
 	)
 
 	tipos = models.CharField(max_length=6, choices=TIPOS, null=False)
 	titulo = models.CharField(max_length=100, null=False, blank=False)
 	apresentacao = models.TextField()
 	imagem = CloudinaryField('imagem', null=False, blank=False)
-	validade = models.DateTimeField(null=False, blank=False)
-	datapublicacao = models.DateTimeField(null=False, blank=False)
+	validade = models.DateField(null=False, blank=False)
+	datapublicacao = models.DateField(null=False, blank=False)
 
 	def publish(self):
 		self.publish_date = timezone.now()

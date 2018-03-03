@@ -47,7 +47,7 @@
 
 		
 		<div class='ini2'>
-		<center><h1><i><br><a href="{% url 'mozix:mozix' %}">Mozix & Comix - Av. Dom Lucio</a><br></i></h1></center>
+		<center><h1><i><br><a href="{% url 'mozix:mozix' %}">Mozix & Comix - Av. Vital Brasil</a><br></i></h1></center>
 			{% for mozi in mozis %}
 			    
 			        <br>
@@ -63,14 +63,14 @@
 		</div>
 
 		<div class='ini'>
-		<center><h1><i><br><a href="{% url 'mc:mcdonalds' %}">McDonalds - Av. Vital Brasil</a><br></i></h1></center>
-			{% for mc in mcs %}
+		<center><h1><i><br><a href="{% url 'pastel:pastel' %}">Pastel do Português - Bairro</a><br></i></h1></center>
+			{% for pt in pts %}
 			    
 			        <br>
-			        <center><h3><p>Publicado em:{{ mc.datapublicacao }}</p></h3><center>
-			        <center><h2>{{ mc.titulo }}</h2></center>
-			        <center><img>{% cloudinary mc.imagem %}</center>
-			        <center><p><h2>{{ mc.apresentacao }}</h2></p></center>
+			        <center><h3><p>Publicado em:{{ pt.datapublicacao }}</p></h3><center>
+			        <center><h2>{{ pt.titulo }}</h2></center>
+			        <center><img>{% cloudinary pt.imagem %}</center>
+			        <center><p><h2>{{ pt.apresentacao }}</h2></p></center>
 			        <br>
 			            
 			{% endfor %}
@@ -79,7 +79,7 @@
 		</div>
 		
 		<div class='ini2'>
-			<center><h1><i><br><a href="{% url 'acai:acai' %}">Açaí do Centro - Centro</a><br></i></h1></center>
+			<center><h1><i><br><a href="{% url 'acai:acai' %}">Açaí & Cupuaçu - Centro</a><br></i></h1></center>
 				{% for acai in acais %}
 				    
 				        <br>

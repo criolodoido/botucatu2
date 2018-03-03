@@ -3,13 +3,11 @@ from django.db import models
 from django.utils import timezone
 from cloudinary.models import CloudinaryField
 
-class Mcdonalds(models.Model):
+class Pastelaria(models.Model):
 	TIPOS = (
-		('OFERT', 'Ofertas do dia'),
 		('CUPOM', 'Cupons'),
-		('COMBO', 'Combos'),
-		('COFFE', 'Café da manhã'),
-		('ICE', 'Sorvetes'),
+		('CARD', 'Cardápio'),
+		('FABR', 'Fabricação Própria'),
 		('INI', 'Inicial')
 	)
 
@@ -17,8 +15,8 @@ class Mcdonalds(models.Model):
 	titulo = models.CharField(max_length=100, null=False, blank=False)
 	apresentacao = models.TextField()
 	imagem = CloudinaryField('imagem', null=False, blank=False)
-	validade = models.DateTimeField(null=False, blank=False)
-	datapublicacao = models.DateTimeField(null=False, blank=False)
+	validade = models.DateField(null=False, blank=False)
+	datapublicacao = models.DateField(null=False, blank=False)
 
 	def publish(self):
 		self.publish_date = timezone.now()
