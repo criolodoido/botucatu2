@@ -83,6 +83,10 @@ h1, h2{
 .btns{
 	float: center;
 }
+.btns table{
+	border-spacing: 50px 0;
+    border-collapse: separate;
+}
 
 .btn1{
 	background: linear-gradient(SandyBrown, red);
@@ -388,3 +392,5 @@ tr, td{
 	border-radius: 50%;
 	overflow: auto;
 }
+
+.tabela2 
