@@ -19,6 +19,6 @@ def cardapio(request):
 	return render(request, 'acai/index.html', {'acais': acais})
 
 def cupons(request):
-	acais = Acai.objects.filter(tipos='CUPOM', validade__gte=timezone.now()).order_by('-datapublicacao')
-	return render(request, 'acai/index.html', {'acais': acais})
+	tickets = Acai.objects.filter(tipos='CUPOM', validade__gte=timezone.now()).order_by('-datapublicacao')
+	return render(request, 'acai/index.html', {'tickets': tickets})
 	
