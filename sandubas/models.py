@@ -3,13 +3,13 @@ from django.db import models
 from django.utils import timezone
 from cloudinary.models import CloudinaryField
 
-class Mozix(models.Model):
+class Sandubas(models.Model):
 	TIPOS = (
-		('COMIDA', 'Comidas'),
-		('BEBIDA', 'Bebidas'),
-		('PETI', 'Petiscos'),
-		('SALG', 'Salgados'),
-		('ASSA', 'Assados'),
+		('HOTDOG', 'Lanches e Hot-dog'),
+		('BARCA', 'Barca'),
+		('PFE', 'Pratos Executivos'),
+		('PORC', 'Porções e Bebidas'),
+		('CUPONS', 'Cupons'),
 		('INI', 'Inicial')
 	)
 
@@ -17,7 +17,7 @@ class Mozix(models.Model):
 	titulo = models.CharField(max_length=100, null=False, blank=False)
 	apresentacao = models.TextField()
 	imagem = CloudinaryField('imagem', null=False, blank=False)
-	validade = models.DateField(null=False, blank=False)
+	validade = models.DateField(null=True, blank=True)#testar a validade assim
 	datapublicacao = models.DateField(null=False, blank=False)
 
 	def publish(self):

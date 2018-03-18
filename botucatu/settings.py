@@ -29,9 +29,9 @@ INSTALLED_APPS = [
     'cloudinary',
     'core',
     'pet',
-    'mozi',
     'acai',
     'pastel',
+    'sandubas',
 
 ]
 

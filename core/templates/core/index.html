@@ -44,24 +44,6 @@
 	    </div>
 
 
-
-		
-		<div class='ini2'>
-		<center><h1><i><br><a href="{% url 'mozix:mozix' %}">Mozix & Comix - Av. Vital Brasil</a><br></i></h1></center>
-			{% for mozi in mozis %}
-			    
-			        <br>
-			        <center><h3><p>Publicado em:{{ mozi.datapublicacao }}</p></h3><center>
-			        <center><h2>{{ mozi.titulo }}</h2></center>
-			        <center><img>{% cloudinary mozi.imagem %}</center>
-			        <center><p><h2>{{ mozi.apresentacao }}</h2></p></center>
-			        <br>
-			            
-			{% endfor %}
-			<br>
-			<br>
-		</div>
-
 		<div class='ini'>
 		<center><h1><i><br><a href="{% url 'pastel:pastel' %}">Pastel do Português - Bairro</a><br></i></h1></center>
 			{% for pt in pts %}
@@ -79,7 +61,7 @@
 		</div>
 		
 		<div class='ini2'>
-			<center><h1><i><br><a href="{% url 'acai:acai' %}">Açaí & Cupuaçu - Centro</a><br></i></h1></center>
+			<center><h1><i><br><a href="{% url 'acai:acai' %}">Açaí da Vital - Vital</a><br></i></h1></center>
 				{% for acai in acais %}
 				    
 				        <br>
@@ -92,9 +74,24 @@
 				{% endfor %}
 				<br>
 				<br>
-			</div>
 		</div>
+
+		<div class='ini'>
+			<center><h1><i><br><a href="{% url 'sandubas:sandubas' %}">Sandubas Lanches - Vital</a><br></i></h1></center>
+				{% for sanduba in sandubas %}
+				    
+				        <br>
+				        <center><h3><p>Publicado em:{{ sanduba.datapublicacao }}</p></h3><center>
+				        <center><h2>{{ sanduba.titulo }}</h2></center>
+				        <center><img>{% cloudinary sanduba.imagem %}</center>
+				        <center><p><h2>{{ sanduba.apresentacao }}</h2></p></center>
+				        <br>
+				            
+				{% endfor %}
+				<br>
+				<br>
+		</div>
+
+
 	</div>
-
-
 {% endblock %}

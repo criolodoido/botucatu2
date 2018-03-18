@@ -180,7 +180,7 @@ h1, h2{
 .ini img{
 	max-width: 50%;
 	max-height: 50%;
-	border-radius: 100%;
+	border-radius: 10%;
 	margin:0 auto;	
 	border-style: dotted;
 	border-width: 5px;
@@ -268,7 +268,7 @@ div.rodape{
 .ini2 img{
 	max-width: 50%;
 	max-height: 50%;
-	border-radius: 100%;
+	border-radius: 10%;
 	margin:0 auto;	
 	border-style: dotted;
 	border-width: 5px;
@@ -392,7 +392,7 @@ tr, td{
 	background-color: white;
 	border: 3px solid;
 	border-color: black;
-	border-radius: 50%;
+	border-radius: 10%;
 	overflow: auto;
 }
 

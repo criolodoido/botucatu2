@@ -5,7 +5,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('core.urls', namespace='core')),
     url(r'^app2/', include('pet.urls', namespace='petmania')),
-    url(r'^app1/', include('mozi.urls', namespace='mozix')),
     url(r'^app3/', include('pastel.urls', namespace='pastel')),
-    url(r'^app4/', include('acai.urls', namespace='acai')),
+    url(r'^acaidavital/', include('acai.urls', namespace='acai')),
+    url(r'^sandubaslanches/', include('sandubas.urls', namespace='sandubas')),
 ]
