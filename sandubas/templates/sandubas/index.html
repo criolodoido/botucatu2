@@ -13,6 +13,24 @@
 	                <br>
 	            </div>
 	{% endfor %}
+	{% for ticket in tickets %}
+	<center><div class= 'coupon'>
+				<div class= 'container'>
+					<img src="{% static 'images/logo3.png' %}" alt="logo"/>
+				</div>
+                <img>{% cloudinary ticket.imagem %}</img>
+                <div class="container1">
+                	<center><h1><bold><a href="{{ ticket.get_absolute_url }}">{{ ticket.titulo }}</a></bold></h1></center>
+                </div>
+                <center><div class= 'container2'>
+                	<p><h2><br>{{ ticket.apresentacao }}<br><br></h2></p>
+                	<div class='expire'>
+                		<p><h3><b>Valido até:{{ ticket.validade }}</b></h3></p>
+                	</div>
+                </div></center>	                
+   </center></div>
+   <br>
+	{% endfor %}
 	<br>
     <br>
     <div class="mapa">
