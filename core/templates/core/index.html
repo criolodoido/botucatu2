@@ -27,39 +27,7 @@
 
 <!-- Toda nova empresa deve ser jogada aqui, dentro de shuffle, para poder ser exibida na tela inicial -->
 	<div id="shuffle">
-		<div class='ini'>
-		<center><h1><i><br><a href="{% url 'petmania:petmania' %}">Petmania - Vital Brasil</a><br></i></h1></center>
-			{% for petmania in petmanias %}
-	                
-	                <br>
-	                <center><h3><p>Publicado em:{{ petmania.datapublicacao }}</p></h3><center>
-	                <center><h2>{{ petmania.titulo }}</h2></center>
-	                <center><img>{% cloudinary petmania.imagem %}</center>
-	                <center><p><h2>{{ petmania.apresentacao }}</h2></p></center>
-	                <br>
-	                
-	        {% endfor %}
-	        <br>
-	        <br>
-	    </div>
-
-
-		<div class='ini'>
-		<center><h1><i><br><a href="{% url 'pastel:pastel' %}">Pastel do Português - Bairro</a><br></i></h1></center>
-			{% for pt in pts %}
-			    
-			        <br>
-			        <center><h3><p>Publicado em:{{ pt.datapublicacao }}</p></h3><center>
-			        <center><h2>{{ pt.titulo }}</h2></center>
-			        <center><img>{% cloudinary pt.imagem %}</center>
-			        <center><p><h2>{{ pt.apresentacao }}</h2></p></center>
-			        <br>
-			            
-			{% endfor %}
-			<br>
-			<br>
-		</div>
-		
+				
 		<div class='ini2'>
 			<center><h1><i><br><a href="{% url 'acai:acai' %}">Açaí da Vital - Vital</a><br></i></h1></center>
 				{% for acai in acais %}

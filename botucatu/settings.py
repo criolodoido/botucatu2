@@ -28,9 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'core',
-    'pet',
     'acai',
-    'pastel',
     'sandubas',
 
 ]

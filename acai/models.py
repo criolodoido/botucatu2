@@ -14,7 +14,7 @@ class Acai(models.Model):
 	titulo = models.CharField(max_length=100, null=False, blank=False)
 	apresentacao = models.TextField()
 	imagem = CloudinaryField('imagem', null=False, blank=False)
-	validade = models.DateField(null=False, blank=False)
+	validade = models.DateField(null=True, blank=True)
 	datapublicacao = models.DateField(null=False, blank=False)
 
 	def publish(self):
