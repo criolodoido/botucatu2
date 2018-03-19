@@ -4,6 +4,8 @@
 <html lang="pt">
 	<head>
 		<title>Cadê o Saci?</title>
+		<meta property="fb:app_id" content="174138446539993">
+		<meta property="fb:admins" content="100002421374214">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
@@ -43,7 +45,17 @@
 			</table>
 		</div>
 	</header>
-	<body>	
+	<body>
+	<!-- Facebook -->
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12&appId=174138446539993&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook -->
 		{% block content %}
 		{% endblock %}	
 	</body>

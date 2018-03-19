@@ -31,8 +31,8 @@ def porcoes(request):
 	return render(request, 'sandubas/index.html', {'sandubas': sandubas})
 
 def cupons(request):
-	sandubas = Sandubas.objects.filter(tipos='CUPONS')
-	return render(request, 'sandubas/index.html', {'sandubas': sandubas})
+	tickets = Sandubas.objects.filter(tipos='CUPONS')
+	return render(request, 'sandubas/index.html', {'tickets': tickets})
 
 #modificacao
 
