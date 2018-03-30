@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     'core',
     'acai',
     'sandubas',
+    'queromais',
+    'divino',
 
 ]
 

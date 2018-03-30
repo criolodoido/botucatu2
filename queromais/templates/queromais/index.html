@@ -1,0 +1,41 @@
+{% extends 'queromais/base2.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+
+	{% for quero in queromais %}
+	            <div class= 'ini'>	            	
+	                <center><h3><p>Publicado em:{{ quero.datapublicacao }}</p></h3><center>
+	                <center><h1><bold><a href="{{ quero.get_absolute_url }}">{{ quero.titulo }}</a></bold></h1></center>
+	                <center><img>{% cloudinary quero.imagem %}</center>
+	                <center><p><h2>{{ quero.apresentacao }}</h2></p></center>
+	                <br>
+	                <br>
+	            </div>
+	{% endfor %}
+	{% for ticket in tickets %}
+		<center><div class= 'coupon'>
+					<div class= 'container'>
+						<img src="{% static 'images/logo3.png' %}" alt="logo"/>
+					</div>
+	                <img>{% cloudinary ticket.imagem %}</img>
+	                <div class="container1">
+	                	<center><h1><bold><a href="{{ ticket.get_absolute_url }}">{{ ticket.titulo }}</a></bold></h1></center>
+	                </div>
+	                <center><div class= 'container2'>
+	                	<p><h2><br>{{ ticket.apresentacao }}<br><br></h2></p>
+	                	<div class='expire'>
+	                		<p><h3><b>Valido até:{{ ticket.validade }}</b></h3></p>
+	                	</div>
+	                </div></center>	                
+	   </center></div>
+	   <br>
+	{% endfor %}
+	<br>
+    <br>
+    <div class="mapa">
+    	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14703.596239818073!2d-48.423506499999995!3d-22.880186899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6df8de370ad55%3A0x3fd4a9b7e45ab703!2sDISK+LANCHE+QUERO%2B!5e0!3m2!1spt-BR!2sbr!4v1521944555916" width="600" height="450" frameborder="5" style="border:2" allowfullscreen></iframe></center>
+    <br>
+{% endblock %}
+
+

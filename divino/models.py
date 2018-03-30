@@ -3,10 +3,11 @@ from django.db import models
 from django.utils import timezone
 from cloudinary.models import CloudinaryField
 
-class Acai(models.Model):
+class Divino(models.Model):
 	TIPOS = (
-		('CUPOM', 'Cupons'),
 		('CARD', 'Cardápio'),
+		('COMBOS', 'Combos'),
+		('CUPOM', 'Cupons'),
 		('INI', 'Início')
 	)
 

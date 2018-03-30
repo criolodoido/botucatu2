@@ -3,18 +3,19 @@ from django.db import models
 from django.utils import timezone
 from cloudinary.models import CloudinaryField
 
-class Acai(models.Model):
+class Queromais(models.Model):
 	TIPOS = (
-		('CUPOM', 'Cupons'),
 		('CARD', 'Cardápio'),
-		('INI', 'Início')
+		('NOVID', 'Novidades'),
+		('CUPONS', 'Cupons'),
+		('INI', 'Inicial')
 	)
 
 	tipos = models.CharField(max_length=6, choices=TIPOS, null=False)
 	titulo = models.CharField(max_length=100, null=False, blank=False)
 	apresentacao = models.TextField()
 	imagem = CloudinaryField('imagem', null=False, blank=False)
-	validade = models.DateField(null=True, blank=True)#verificar
+	validade = models.DateField(null=True, blank=True)#testar a validade assim
 	datapublicacao = models.DateField(null=False, blank=False)
 
 	def publish(self):

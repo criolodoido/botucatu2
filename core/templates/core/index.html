@@ -60,6 +60,38 @@
 				<br>
 		</div>
 
+		<div class='ini2'>
+			<center><h1><i><br><a href="{% url 'queromais:queromais' %}">Lanches Quero Mais - Centro</a><br></i></h1></center>
+				{% for quero in queromais %}
+				    
+				        <br>
+				        <center><h3><p>Publicado em:{{ quero.datapublicacao }}</p></h3><center>
+				        <center><h2>{{ quero.titulo }}</h2></center>
+				        <center><img>{% cloudinary quero.imagem %}</center>
+				        <center><p><h2>{{ quero.apresentacao }}</h2></p></center>
+				        <br>
+				            
+				{% endfor %}
+				<br>
+				<br>
+		</div>
+
+		<div class='ini'>
+			<center><h1><i><br><a href="{% url 'divino:divino' %}">Divino Restaurante - Bairro</a><br></i></h1></center>
+				{% for divino in divinos %}
+				    
+				        <br>
+				        <center><h3><p>Publicado em:{{ divino.datapublicacao }}</p></h3><center>
+				        <center><h2>{{ divino.titulo }}</h2></center>
+				        <center><img>{% cloudinary divino.imagem %}</center>
+				        <center><p><h2>{{ divino.apresentacao }}</h2></p></center>
+				        <br>
+				            
+				{% endfor %}
+				<br>
+				<br>
+		</div>
+
 
 	</div>
 {% endblock %}

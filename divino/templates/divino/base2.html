@@ -26,27 +26,25 @@
 		</script>
 	</head>
 	<header class="opener">
-		<div class="logo">
-			<img src="{% static 'images/sandubas.png' %}" alt="logo"/>
+		<div class="logo4">
+			<img src="{% static 'images/divino2.png' %}" alt="logo"/>
 		</div>
 		<title>Sejam bem vindos, e que possamos ajudar-te</title> 
 		<div class="texto">
-			<center><br><h1 style="text_align:center;">Cadê o Saci?</h1><br></center><!-- Pensar em uma animação bacana com css a ser inserida aqui -->
-			<h2 style="text_align:center;">O Saci encontrou:<br></h2></center><p><center><h2 style="text_align:center;"> Sandubas Lanches!</h2></center></p>
-		<div class='btns'>
+			<center><br><h1 style="text_align:center;">O Saci encontrou!</h1><br><br></center><!-- Pensar em uma animação bacana com css a ser inserida aqui -->
+			<h1 style="text_align:center;">Divino Restaurante!</h1></center>
+		<div class='btns2'>
 			<table>
 				<tr>
-					<td><h2><a href="{% url 'sandubas:hotdog' %}"><button class='btn1'>Lanches<br> Hot-dog</button></a></h2></td>
-					<td><h2><a href="{% url 'sandubas:barca' %}"><button class='btn2'>Barca</button></a></h2></td>
-					<td><h2><a href="{% url 'sandubas:pratos' %}"><button class='btn3'>Pratos<br>Executivos</button></h2></a></td>
-					<td><h2><a href="{% url 'sandubas:porcoes' %}"><button class='btn4'>Porções<br> Bebidas</button></h2></a></td>
-					<td><h2><a href="{% url 'sandubas:cupons' %}"><button class='btn4'>Cupons</button></h2></a></td>
+					<td><h2><a href="{% url 'divino:cardapio' %}"><button class='btn1'>Cardápio</button></a></h2></td>
+					<td><h2><a href="{% url 'divino:combos' %}"><button class='btn1'>Combos</button></a></h2></td>
+					<td><h2><a href="{% url 'divino:cupons' %}"><button class='btn2'>Cupons</button></a></h2></td>
 				</tr>
 			</table>
 		</div>
 	</header>
 	<body>
-	<!-- Facebook -->
+<!-- Facebook -->
 		<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
