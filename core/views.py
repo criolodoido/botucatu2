@@ -14,8 +14,8 @@ def index(request):
 	acais = Acai.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=30)).order_by('-datapublicacao')[0:3]
 	sandubas = Sandubas.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=30)).order_by('-datapublicacao')[0:3]
 	queromais = Queromais.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=30)).order_by('-datapublicacao')[0:3]
-	divino = Divino.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=30)).order_by('-datapublicacao')[0:3]
-	return render(request, 'core/index.html', {'posts': posts, 'acais': acais, 'sandubas': sandubas, 'queromais': queromais, 'divino': divino})
+	divinos = Divino.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=30)).order_by('-datapublicacao')[0:3]
+	return render(request, 'core/index.html', {'posts': posts, 'acais': acais, 'sandubas': sandubas, 'queromais': queromais, 'divinos': divinos})
 
 def vital(request):
 	return render(request, 'core/vital.html', {})
