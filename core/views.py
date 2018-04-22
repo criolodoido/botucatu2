@@ -10,7 +10,7 @@ from divino.models import Divino
 
 def index(request):
 	#no posts, posso fazer no models um campo para data limite de exibicao, desta forma crio aqui no views a condicao para a exibicao do mesmo.
-	posts = Promocao.objects.filter(encerramento__gte=timezone.now()).order_by('-encerramento')
+	posts = Promocao.objects.filter(encerramento__gt=timezone.now()).order_by('-encerramento')
 	acais = Acai.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=30)).order_by('-datapublicacao')[0:3]
 	sandubas = Sandubas.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=30)).order_by('-datapublicacao')[0:3]
 	queromais = Queromais.objects.filter(datapublicacao__gt=timezone.now().date() - timedelta(days=30)).order_by('-datapublicacao')[0:3]
